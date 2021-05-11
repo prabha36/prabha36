@@ -11,6 +11,8 @@ class Check {
         finally {
             System.out.println("Always executed");
         }
+
+        System.out.println("After try");
     }
 }
 public class Exception extends Throwable {

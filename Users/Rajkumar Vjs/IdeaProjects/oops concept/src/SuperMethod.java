@@ -7,7 +7,7 @@ class Student1 extends Student {
         int mark =95;
 
     void display() {
-        System.out.println("super." +mark);
+        System.out.println(super.mark);
     }
 }
 
