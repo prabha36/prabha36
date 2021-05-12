@@ -14,6 +14,7 @@ public class Guitar extends Instruments1 {
         this.numbers = numbers;
     }
 
+
     public void play() {
         System.out.println("" + numbers + "" + name + "");
     }

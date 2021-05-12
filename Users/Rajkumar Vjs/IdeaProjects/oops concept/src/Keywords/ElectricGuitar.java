@@ -2,6 +2,8 @@ package Keywords;
 
 public class ElectricGuitar extends Instruments1 {
 
+
+
     public ElectricGuitar() {
         this.name = "Electric Guitar";
         this.numbers = 30;

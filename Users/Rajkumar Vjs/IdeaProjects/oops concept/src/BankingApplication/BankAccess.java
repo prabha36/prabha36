@@ -31,7 +31,7 @@ public class BankAccess {
             System.out.println("Deposited : " + previousTransation);
         }
         else if(previousTransation < 0) {
-            System.out.println("" + Math.abs(previousTransation));
+            System.out.println("withdarwn" + previousTransation);
         }
         else
         {
@@ -50,13 +50,12 @@ public class BankAccess {
         System.out.println("E. Exit");
 
         do {
-            System.out.println("Enter an opstion");
+            System.out.println("Enter an option");
             option = s.next().charAt(0);
 
             switch (option) {
                 case 'A':
                     System.out.println("Balance : " + balance);
-
                     break;
                 case'B':
                     System.out.println("Enter a deposit amount");

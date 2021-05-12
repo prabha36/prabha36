@@ -1,44 +1,42 @@
 package CheckDetails;
 
 public class SelectionArea {
-    //global Variable init
+
     public int candidateAge;
-    private boolean isHealthIssues = false;
+    public boolean isHealthIssues = false;
 
 
     public  String candidateName = "";
-    private String Area = "";
+    public String Area = "";
 
-    public SelectionArea(int candidateAge,Boolean isHealth) {
+    public SelectionArea(int candidateAge,Boolean isHealthIssues) {
         this.candidateAge = candidateAge;
-        this.isHealthIssues = isHealth;
+        this.isHealthIssues = isHealthIssues;
     }
 
     public boolean checkPersonDetail(){
         PersonDetails personDetails = new PersonDetails();
-        PersonDetails personDetail = personDetails.personDetail();
+        PersonDetails details = personDetails.personDetail();
 
-
-        if(personDetail.isAnyHealthIssues() != isHealthIssues){
-            System.out.println("Sorry now,you have to check you health. and try again");
+        if(details.isAnyHealthIssues() != isHealthIssues){
+            System.out.println("Sorry now,you have to check your health. and try again");
             return false;
-        }else if(personDetail.getCandidateAge() < candidateAge){
+        }else if(details.getCandidateAge() < candidateAge){
             System.out.println("Sorry you are not eligible for attending election work");
             return false;
-        }else if(!personDetail.isAnyHealthIssues() && personDetail.getCandidateAge() > candidateAge){
-            candidateName = personDetail.getCandidateName();
-            Area = personDetail.getCandidateAddress();
+        }else if(!details.isAnyHealthIssues() && details.getCandidateAge() > candidateAge){
+            candidateName = details.getCandidateName();
+            Area = details.getCandidateAddress();
             System.out.println("Yes have to start the work now!....");
             return true;
         }
-
 
         return false;
     }
 
     public static void main(String[] args){
 
-        SelectionArea selcArea= new SelectionArea(18,true);
+        SelectionArea selcArea= new SelectionArea(18,false);
         boolean isEligible = selcArea.checkPersonDetail();
 
         if(isEligible)
@@ -47,7 +45,6 @@ public class SelectionArea {
         }else {
             System.out.println("Sorry you have try later.");
         }
-
     }
 
 }
