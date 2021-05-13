@@ -5,7 +5,6 @@ public class GetName extends Thread
     public void run()
     {
         System.out.println("Getname value");
-        //Thread.State state = Thread.currentThread().getState();
     }
     public static void main(String args[])
     {

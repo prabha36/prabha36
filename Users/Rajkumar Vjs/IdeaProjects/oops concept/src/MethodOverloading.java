@@ -4,10 +4,10 @@ import java.util.*;
         System.out.println("no paramater");
     }
     void method(int a) {
-        System.out.print(a);
+        System.out.println(a);
     }
-    void method(int a, int b) {
-        System.out.println(a+b);
+    void method(double a) {
+        System.out.println(a);
     }
 }
 
@@ -15,7 +15,7 @@ public class MethodOverloading {
     public static void main(String args[]) {
         Testoverloading t= new Testoverloading();
         t.method();
-        t.method(4,5);
+        t.method(4);
         t.method(4);
     }
 }
