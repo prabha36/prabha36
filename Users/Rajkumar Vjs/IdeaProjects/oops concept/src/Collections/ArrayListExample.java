@@ -10,7 +10,6 @@ public class ArrayListExample {
         }
 
         arrayList.remove(2);
-        arrayList.add(4);
         System.out.println(arrayList);
     }
 }

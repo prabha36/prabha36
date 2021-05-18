@@ -11,10 +11,7 @@ public class StoreListValue {
             System.out.println(list.get(i));
         }
     }
-
-
     public static void main(String args[]) {
-
 
         ArrayList<String> ingredientList= new ArrayList<>();
 
