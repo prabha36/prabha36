@@ -8,6 +8,7 @@ class Student1 extends Student {
 
     void display() {
         System.out.println(super.mark);
+        System.out.println(mark);
     }
 }
 

@@ -22,5 +22,4 @@ public class SinglyLinkedList {
         Bikes.set(0, "BMW");
         System.out.println(""+Bikes);
     }
-
 }
