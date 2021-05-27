@@ -12,7 +12,8 @@ public class NullPointerExceptionEx extends Throwable {
             System.out.println(name + " " + ID.length());
         }
         catch (NullPointerException e) {
-            System.out.println("can't be find the lenth() of null value");
+            e.printStackTrace();
+            //System.out.println("can't be find the lenth() of null value"+e);
         }
     }
 }

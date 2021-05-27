@@ -12,7 +12,8 @@ class IOExceptionEx{
         try {
             method1();
         } catch(Exception e) {
-            System.out.println("exception handled");
+            e.printStackTrace();
+           // System.out.println("exception handled");
         }
         //method1();
     }
