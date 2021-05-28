@@ -10,7 +10,7 @@ public class Demo {
         int b;
         a =s.nextInt();
         b =s.nextInt();
-        if(a > b ) {
+        if(a > b) {
             System.out.println(a);
         }
         else {

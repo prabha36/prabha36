@@ -9,7 +9,6 @@ public class Inheritance {
     }
 }
 
-
 class One {
     protected String s = "Hi";
     void a() {
@@ -17,16 +16,12 @@ class One {
     }
 }
 
-
-
 class Two extends One {
     void second() {
         s = "";
         System.out.print("2nd value accepted");
     }
 }
-
-
 
 class Three extends Two {
     void c() {
