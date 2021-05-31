@@ -6,7 +6,7 @@ public class JoinMethod extends Thread {
              System.out.println("person one " + i);
              try {
                  Thread t=new Thread();
-                 t.sleep(500);
+                 t.sleep(2000);
              }
              catch (Exception e) {
                  System.out.println(" ");
@@ -19,7 +19,7 @@ public class JoinMethod extends Thread {
          JoinMethod j2= new JoinMethod();
          j.start();
          try {
-             j.join(1500);
+             j.join(500);
          }
          catch (Exception e) {
 
