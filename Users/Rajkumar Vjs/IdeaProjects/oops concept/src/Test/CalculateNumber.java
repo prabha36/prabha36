@@ -11,13 +11,12 @@ public class CalculateNumber {
             answer = a - b;
         } else if(operator.equals("*")) {
             answer = a * b;
-        } else if(operator.equals("/")){
+        } else if(operator.equals("/")) {
             answer = a / b;
         } else {
             answer = 0;
         }
         return answer;
-
     }
     public static void main(String args[]) {
         CalculateNumber calculateNumber=new CalculateNumber();
@@ -33,7 +32,6 @@ public class CalculateNumber {
         calculateNumber.calculate(firstNumber,secondNumber,operator);
         int result =calculateNumber.calculate(firstNumber,secondNumber,operator);
         System.out.println("The result is " + result);
-
 
     }
 }

@@ -12,7 +12,7 @@ public class ClassA {
 }
 class TestProgram {
     public static void main(String args[]) {
-        ClassB classB= new ClassB();
+        ClassA classB= new ClassB();
         classB.print();
     }
 }
