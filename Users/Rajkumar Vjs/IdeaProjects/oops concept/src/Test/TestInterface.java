@@ -14,7 +14,6 @@ abstract class Base {
   @Override
   public void test() {
    System.out.println("This is implementation class");
-
   }
   public static void main(String args[]) {
    RealTest realTest = new RealTest();
