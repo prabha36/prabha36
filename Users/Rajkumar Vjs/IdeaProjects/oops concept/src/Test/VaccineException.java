@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class VaccineException extends Exception {
     public void isEligibleForVaccine(int age) {
-
     }
     public static void main(String args[]){
         VaccineException vaccineException = new VaccineException();
@@ -24,5 +23,4 @@ public class VaccineException extends Exception {
             }
         }
     }
-
 }

@@ -8,7 +8,6 @@ public class Datas {
     private String district;
     private String area;
 
-
     public Datas(String name, String district, String area) {
         this.name=name;
         this.district=district;
@@ -89,7 +88,6 @@ public class Datas {
         Datas datas5 = new Datas("Geetha", "Chennai", "Nungambakkam");
         Datas datas6 = new Datas("Rob", "Bangalore","Whitefields");
         Datas datas7 = new Datas("Krishna", "Kerala","Trichur");
-
 
 
         dataList.add(datas);
